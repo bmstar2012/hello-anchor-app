@@ -27,7 +27,9 @@ const programID = new PublicKey(idl.metadata.address);
 function App() {
   const [value, setValue] = useState(null);
   const wallet = useWallet();
+  // console.log('wallet', wallet);
 
+  console.log('baseAccount', baseAccount, baseAccount.publicKey.toBase58());
   async function getProvider() {
     /* create the provider and return it to the caller */
     /* network set to local network for now */
@@ -55,7 +57,9 @@ function App() {
         signers: [baseAccount]
       });
 
+      console.log('baseAccount', program.account, program.account.baseAccount);
       const account = await program.account.baseAccount.fetch(baseAccount.publicKey);
+      
       console.log('account: ', account);
       setValue(account.count.toString());
     } catch (err) {
