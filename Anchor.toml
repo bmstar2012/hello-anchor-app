@@ -1,5 +1,5 @@
 [programs.localnet]
-hello_anchor_app = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+hello_anchor_app = "Deppnq5S8rJxBSwbK8GHwakk4oaRfMFcG4p5SkwfUgRq"
 
 [registry]
 url = "https://anchor.projectserum.com"
